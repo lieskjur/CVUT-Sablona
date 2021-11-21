@@ -1,0 +1,80 @@
+\documentclass[12pt,oneside]{book}
+\usepackage[utf8]{inputenc}
+
+% Basic packages
+	\usepackage{amssymb}
+	\usepackage{amsmath}
+	\usepackage{graphicx}
+	\usepackage[english]{babel}
+	\usepackage{natbib}
+
+% Relevant packages
+	\usepackage{bm}
+	\usepackage{geometry}
+
+	\usepackage{tabularx} % Used for the anotation sheet
+	\usepackage{listings}
+	\usepackage{caption}
+	% \usepackage{pdfpages}
+
+% Document settings
+	\geometry{
+		a4paper,
+		left=35mm,
+		right=25mm
+	}
+		
+	\setlength{\parindent}{0pt}
+	\setlength{\parskip}{1.5em}
+	\renewcommand{\baselinestretch}{1.2}
+
+	\numberwithin{equation}{section}
+	\numberwithin{figure}{chapter}
+	\numberwithin{table}{chapter}
+	%\numberwithin{listing}{chapter}
+
+	%\setlength{\abovedisplayskip}{1.2em}
+	%\setlength{\belowdisplayskip}{1.2em}
+
+
+% Bibliographical information
+	\def \ThesisType {MASTER'S THESIS}
+	\def \ThesisTitle {Working title}
+	\def \ThesisTitleCZ {Pracovní název}
+	\def \ThesisAuthor {Bc. Juraj Lieskovský}
+	\def \ThesisSupervisor {Ing. Petr Beneš, Ph.D.}
+	\def \ThesisYear {2022}
+
+	\def \CVUT {Czech technical university in Prague}
+	\def \FS {Faculty of mechanical engineering}
+	\def \MECH {Department of mechanics, biomechanics and mechatronics}
+
+\begin{document}
+
+	\frontmatter
+
+	\include{FrontMatter/TitlePage}
+	%\includepdf[pages=-]{FrontMatter/Zadani.pdf}
+	\include{FrontMatter/AnnotationSheet}
+	\include{FrontMatter/Statement_of_originality}
+	\include{FrontMatter/Acknowledgements}
+	
+	\mainmatter
+	%\setcounter{page}{6}
+
+	\tableofcontents
+	\newpage
+	\listoffigures
+	%\addcontentsline{toc}{chapter}{List of Figures}
+	%\listoflistings
+	\listoftables
+
+	\include{MainMatter/Introduction}
+
+	\backmatter
+
+	\bibliographystyle{unsrt}
+	%\addcontentsline{toc}{chapter}{Bibliography}
+	%\bibliography{}
+
+\end{document}
