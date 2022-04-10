@@ -9,3 +9,7 @@
 *.toc
 *.lot
 *.lof
+*.out
+*.blg
+*.bbl
+*.lol
